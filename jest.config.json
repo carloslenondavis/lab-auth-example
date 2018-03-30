@@ -1,0 +1,24 @@
+{
+    "bail": true,
+    "verbose": true,
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+        "src/db/models/*.js",
+        "src/entities/**/*.js",
+        "src/schema/queries/**/*.js",
+        "src/schema/types/*.js",
+        "src/schema/inputs/*.js",
+        "!src/db/models/index.js",
+        "!node_modules/**",
+        "!test/**"
+    ],
+    "testEnvironment": "node",
+    "coverageThreshold": {
+        "global": {
+            "branches": 100,
+            "functions": 100,
+            "lines": 100,
+            "statements": 100
+        }
+    }
+}
